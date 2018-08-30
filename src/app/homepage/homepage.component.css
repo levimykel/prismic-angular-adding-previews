@@ -1,0 +1,32 @@
+.homepage-banner {
+  margin: 0 0 80px;
+  padding: 10em 0 8em;
+  background-position: center center;
+  background-size: cover;
+  color: #ffffff;
+  line-height: 1.75;
+  text-align: center;
+  font-family: sans-serif;
+}
+.banner-content {
+  text-align: center;
+}
+.banner-title, .banner-description {
+  width: 90%;
+  max-width: 490px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.banner-title {
+  color: #ffffff;
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 70px;
+}
+
+@media (max-width: 767px) {
+  .banner-title {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}

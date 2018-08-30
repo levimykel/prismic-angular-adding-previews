@@ -1,0 +1,11 @@
+<div *ngIf="document.data" >
+  <section
+    class="homepage-banner"
+    [ngStyle]="{'background-image': 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(' + document.data.banner_image.url + ')'}"
+  >
+    <div class="banner-content container">
+      <h1 class="banner-title">{{ PrismicDOM.RichText.asText(document.data.title) }}</h1>
+      <div class="banner-description" [innerHTML]="PrismicDOM.RichText.asHtml(document.data.tagline)"></div>
+    </div>
+  </section>
+</div>

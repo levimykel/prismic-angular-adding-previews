@@ -1,27 +1,48 @@
-# PrismicSite
+# Getting Started with Prismic & Angular 6
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.2.
+This is the end result of following the first article about integrating Angular 6 with Prismic (API-based CMS).
 
-## Development server
+## Getting Started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-## Code scaffolding
+### Prerequisites
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Make sure that you have [Node.js](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/get-npm) installed on your machine.
 
-## Build
+*The Angular CLI runs best with Node.js version 8.x or greater and npm version 5.x or greater. You can verify this by running* `node -v` *and* `npm -v` *in a terminal/console window.*
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+You can install the Angular CLI by running the following command in your terminal.
 
-## Running unit tests
+```
+npm install -g @angular/cli
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Installing
 
-## Running end-to-end tests
+After downloading or cloning this project, run the following command from the root of your project files.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```
+npm install
+```
 
-## Further help
+Then you can connect it to your Prismic repository by updating the endpoint in the `src/prismic-configuration.ts` file.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```
+apiEndpoint: 'https://your-repo-name.prismic.io/api/v2',
+```
+
+Make sure that you've created some content in your repository as described in the article.
+
+### Running the project
+
+To launch the project in your local environment, run the following command.
+
+```
+ng serve --open
+```
+
+## Built With
+
+* [Angular](https://angular.io/) - Front-end web application platform
+* [Prismic](https://prismic.io/) - Headless API-based CMS
