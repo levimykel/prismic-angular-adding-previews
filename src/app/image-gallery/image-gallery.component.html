@@ -1,0 +1,6 @@
+<section class="gallery content-section">
+  <div  *ngFor="let galleryItem of slice.items" class="gallery-item">
+    <img src="{{ galleryItem.image.url }}"/>
+    <div [innerHTML]="PrismicDOM.RichText.asHtml(galleryItem.image_description)"></div>
+  </div>
+</section>

@@ -1,0 +1,23 @@
+.highlight {
+  position: relative;
+  overflow: auto;
+}
+.highlight-left {
+  width: 43%;
+  float: left;
+}
+.highlight-right {
+  width: 48%;
+  float: right;
+}
+.highlight-right img {
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .highlight-left,
+  .highlight-right {
+    width: 100%;
+    float: none;
+  }
+}

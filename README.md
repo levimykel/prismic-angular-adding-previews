@@ -1,6 +1,6 @@
-# Getting Started with Prismic & Angular 6
+# Prismic & Angular 6 - Adding Slices to the Homepage
 
-This is the end result of following the first article about integrating Angular 6 with Prismic (API-based CMS).
+This is the end result of following the Adding Slices to the Homepage article about integrating Angular 6 with Prismic (API-based CMS).
 
 ## Getting Started
 
@@ -32,7 +32,7 @@ Then you can connect it to your Prismic repository by updating the endpoint in t
 apiEndpoint: 'https://your-repo-name.prismic.io/api/v2',
 ```
 
-Make sure that you've created some content in your repository as described in the article.
+Make sure that you've created some content in your repository as described in the Prismic & Angular 6 articles.
 
 ### Running the project
 

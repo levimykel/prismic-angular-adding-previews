@@ -8,4 +8,13 @@
       <div class="banner-description" [innerHTML]="PrismicDOM.RichText.asHtml(document.data.tagline)"></div>
     </div>
   </section>
+  <div class="container" >
+    <div *ngFor="let slice of document.data.body">
+      <div [ngSwitch]="slice.slice_type">
+        <app-text-section *ngSwitchCase="'text_section'" [slice]="slice"></app-text-section>
+        <app-image-highlight *ngSwitchCase="'image_highlight'" [slice]="slice"></app-image-highlight>
+        <app-image-gallery *ngSwitchCase="'image_gallery'" [slice]="slice"></app-image-gallery>
+      </div>
+    </div>
+  </div>
 </div>

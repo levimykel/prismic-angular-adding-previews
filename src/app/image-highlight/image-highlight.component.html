@@ -1,0 +1,9 @@
+<section class="highlight content-section">
+  <div class="highlight-left">
+    <div [innerHTML]="PrismicDOM.RichText.asHtml(slice.primary.title)"></div>
+    <div [innerHTML]="PrismicDOM.RichText.asHtml(slice.primary.headline)"></div>
+  </div>
+  <div class="highlight-right">
+    <img src="{{ slice.primary.featured_image.url }}"/>
+  </div>
+</section>
