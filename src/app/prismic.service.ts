@@ -28,6 +28,16 @@ export class PrismicService {
     });
   }
 
+  // Get the Navigation Document
+  getNavigationDocument(): Promise<void | Observable<Object>> {
+    return this.getApi().then((api) => {
+      return api.getSingle('navigation')
+      .then((document) => {
+        return of(document);
+      });
+    });
+  }
+
   // Get a Page Document by its UID value
   getPageDocument(uid: string): Promise<void | Observable<Object>> {
     return this.getApi().then((api) => {

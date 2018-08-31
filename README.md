@@ -1,6 +1,6 @@
-# Prismic & Angular 6 - Adding Routes & Pages
+# Prismic & Angular 6 - Adding a Navigation
 
-This is the end result of following the Adding Routes & Pages article about integrating Angular 6 with Prismic (API-based CMS).
+This is the end result of following the Adding a Navigation article about integrating Angular 6 with Prismic (API-based CMS).
 
 ## Getting Started
 

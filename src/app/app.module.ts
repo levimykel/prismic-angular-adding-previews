@@ -10,6 +10,7 @@ import { FullWidthImageComponent } from './full-width-image/full-width-image.com
 import { QuoteComponent } from './quote/quote.component';
 import { PageComponent } from './page/page.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AppRoutingModule } from './/app-routing.module';
     ImageGalleryComponent,
     FullWidthImageComponent,
     QuoteComponent,
-    PageComponent
+    PageComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,

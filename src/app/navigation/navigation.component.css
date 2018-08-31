@@ -1,0 +1,10 @@
+nav {
+  margin-bottom: 20px;
+}
+a {
+  margin-right: 30px;
+  color: #484d52;
+}
+a:hover {
+  color: #72767B;
+}

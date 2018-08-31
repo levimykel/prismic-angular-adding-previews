@@ -1,0 +1,7 @@
+<nav *ngIf="document.data" class="container main-nav">
+  <a
+    *ngFor="let link of document.data.menu_links"
+    routerLink="{{ PrismicDOM.Link.url(link.link, Config.linkResolver) }}">
+    {{ PrismicDOM.RichText.asText(link.label) }}
+  </a>
+</nav>
