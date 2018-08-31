@@ -1,6 +1,6 @@
-# Prismic & Angular 6 - Adding a Navigation
+# Prismic & Angular 6 - Adding Previews & Edit buttons
 
-This is the end result of following the Adding a Navigation article about integrating Angular 6 with Prismic (API-based CMS).
+This is the end result of following the Adding Previews & Edit buttons article about integrating Angular 6 with Prismic (API-based CMS).
 
 ## Getting Started
 
@@ -30,6 +30,16 @@ Then you can connect it to your Prismic repository by updating the endpoint in t
 
 ```
 apiEndpoint: 'https://your-repo-name.prismic.io/api/v2',
+```
+
+You also need to update the endpoint in the `src/index.html` file.
+
+```
+<script>
+  window.prismic = {
+    endpoint: 'https://<your-repo-name>.prismic.io/api/v2'
+  };
+</script>
 ```
 
 Make sure that you've created some content in your repository as described in the Prismic & Angular 6 articles.

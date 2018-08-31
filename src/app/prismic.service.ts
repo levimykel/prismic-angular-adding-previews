@@ -47,4 +47,18 @@ export class PrismicService {
       });
     });
   }
+
+  // Use the Link Resolver to return the correct url for your previews
+  getPreviewUrl(token: string): Promise<string> {
+    return this.getApi().then((api) => {
+      return api.previewSession(token, CONFIG.linkResolver, '/').then((url) => {
+        return of(url);
+      });
+    });
+  }
+
+  // Launch the prismic toolbar to add edit buttons to our pages
+  toolbar(): void {
+    window['PrismicToolbar'].setupEditButton(CONFIG.apiEndpoint);
+  }
 }

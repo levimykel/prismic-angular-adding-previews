@@ -1,4 +1,5 @@
 <div *ngIf="document.data" class="container" >
+  <app-edit-button [documentId]="document.id"></app-edit-button>
   <h1>{{ PrismicDOM.RichText.asText(document.data.title) }}</h1>
   <div *ngFor="let slice of document.data.body">
     <div [ngSwitch]="slice.slice_type">

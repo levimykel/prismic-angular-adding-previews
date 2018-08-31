@@ -11,6 +11,8 @@ import { QuoteComponent } from './quote/quote.component';
 import { PageComponent } from './page/page.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { NavigationComponent } from './navigation/navigation.component';
+import { PreviewComponent } from './preview/preview.component';
+import { EditButtonComponent } from './edit-button/edit-button.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { NavigationComponent } from './navigation/navigation.component';
     FullWidthImageComponent,
     QuoteComponent,
     PageComponent,
-    NavigationComponent
+    NavigationComponent,
+    PreviewComponent,
+    EditButtonComponent
   ],
   imports: [
     BrowserModule,

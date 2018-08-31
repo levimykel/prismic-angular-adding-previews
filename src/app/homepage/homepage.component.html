@@ -1,4 +1,5 @@
 <div *ngIf="document.data" >
+  <app-edit-button [documentId]="document.id"></app-edit-button>
   <section
     class="homepage-banner"
     [ngStyle]="{'background-image': 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(' + document.data.banner_image.url + ')'}"
