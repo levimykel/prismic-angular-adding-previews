@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs'; // to handle the Promises returned when we query the API
+import { Observable, of } from 'rxjs';
 
 import * as Prismic from 'prismic-javascript';
 import { CONFIG } from '../prismic-configuration';
@@ -9,16 +9,32 @@ export class PrismicService {
 
   constructor() {}
 
-  getHomepageDocument(): Promise<void | Observable<Object>> {
-    // First we need to retrieve the API object
+  // Get the API object which we will use for all our queries
+  getApi(): Promise<void | any> {
     return Prismic.api(CONFIG.apiEndpoint, {accessToken: CONFIG.accessToken})
       .then((api) => {
-        // Then we can query the Homepage document
-        return api.getSingle('homepage')
-        .then((document) => {
-          return of(document);
-        });
+        return api;
       })
       .catch(e => console.log(`Error during connection to your Prismic API: ${e}`));
+  }
+
+  // Get the Homepage Document
+  getHomepageDocument(): Promise<void | Observable<Object>> {
+    return this.getApi().then((api) => {
+      return api.getSingle('homepage')
+      .then((document) => {
+        return of(document);
+      });
+    });
+  }
+
+  // Get a Page Document by its UID value
+  getPageDocument(uid: string): Promise<void | Observable<Object>> {
+    return this.getApi().then((api) => {
+      return api.getByUID('page', uid)
+      .then((document) => {
+        return of(document);
+      });
+    });
   }
 }

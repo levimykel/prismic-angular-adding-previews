@@ -1,6 +1,6 @@
-# Prismic & Angular 6 - Adding Slices to the Homepage
+# Prismic & Angular 6 - Adding Routes & Pages
 
-This is the end result of following the Adding Slices to the Homepage article about integrating Angular 6 with Prismic (API-based CMS).
+This is the end result of following the Adding Routes & Pages article about integrating Angular 6 with Prismic (API-based CMS).
 
 ## Getting Started
 

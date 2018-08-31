@@ -6,6 +6,10 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { TextSectionComponent } from './text-section/text-section.component';
 import { ImageHighlightComponent } from './image-highlight/image-highlight.component';
 import { ImageGalleryComponent } from './image-gallery/image-gallery.component';
+import { FullWidthImageComponent } from './full-width-image/full-width-image.component';
+import { QuoteComponent } from './quote/quote.component';
+import { PageComponent } from './page/page.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -13,10 +17,14 @@ import { ImageGalleryComponent } from './image-gallery/image-gallery.component';
     HomepageComponent,
     TextSectionComponent,
     ImageHighlightComponent,
-    ImageGalleryComponent
+    ImageGalleryComponent,
+    FullWidthImageComponent,
+    QuoteComponent,
+    PageComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

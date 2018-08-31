@@ -1,0 +1,10 @@
+<div *ngIf="document.data" class="container" >
+  <h1>{{ PrismicDOM.RichText.asText(document.data.title) }}</h1>
+  <div *ngFor="let slice of document.data.body">
+    <div [ngSwitch]="slice.slice_type">
+      <app-text-section *ngSwitchCase="'text_section'" [slice]="slice"></app-text-section>
+      <app-full-width-image *ngSwitchCase="'full_width_image'" [slice]="slice"></app-full-width-image>
+      <app-quote *ngSwitchCase="'quote'" [slice]="slice"></app-quote>
+    </div>
+  </div>
+</div>
